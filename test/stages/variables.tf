@@ -24,7 +24,7 @@ variable "bootstrap_prefix" {
 variable "namespace" {
   type        = string
   description = "Namespace for tools"
-  default = "cp4s"
+  default = "apic"
 }
 
 variable "cluster_name" {

@@ -1,8 +1,8 @@
 apiVersion: apiconnect.ibm.com/v1beta1
 kind: APIConnectCluster
-metadata:
-  name: 
+metadata: 
     name: {{ .Values.ibm_apic_instance.name }}
+    namespace: {{ .Values.ibm_apic_instance.namespace }}
 spec:
   license:
     accept: true

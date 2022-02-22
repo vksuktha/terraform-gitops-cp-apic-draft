@@ -4,7 +4,7 @@ module "dev_cluster" {
   server_url = var.server_url
   login_user = var.cluster_username
   login_password = var.cluster_password
-  login_token = "sha256~HLMCIU66d3oWcJ4j9cLFY7PDku1Sg7tCPVUSKqYyyKU"
+  login_token = "sha256~DWIqS_T_Q1MKTMugIl29Tkuy1IuxiacOKStjyjCvygM"
 }
 
 resource null_resource output_kubeconfig {

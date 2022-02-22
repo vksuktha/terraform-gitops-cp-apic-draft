@@ -7,5 +7,7 @@ module "gitops_module" {
   namespace = module.gitops_namespace.name
   kubeseal_cert = module.gitops.sealed_secrets_cert
   entitlement_key = var.cp_entitlement_key
-
+  apic_version = module.cp4i-dependencies.apic.version
+  license_id = module.cp4i-dependencies.apic.license
+  usage = module.cp4i-dependencies.apic.license_use
 }

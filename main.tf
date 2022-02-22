@@ -1,25 +1,22 @@
 locals {
-  name          = "ibm-cp-apic-instance"
+  name          = "ibm-cp4i-apic-instance"
   bin_dir       = module.setup_clis.bin_dir
   chart_dir     = "${path.module}/charts/${local.name}"
   yaml_dir      = "${path.cwd}/.tmp/${local.name}/chart/${local.name}"
   service_url   = "http://${local.name}.${var.namespace}"
   values_content = {
-    metadata = {
+    ibm_apic_instance = {
       name = "apicinstance"
       namespace = var.namespace
-    }
-    spec = {
       license = {
-        accept: "true"
-        use: var.usage
-        license_id: var.license_id
+        accept = true
+        use = var.usage
+        license_id = var.license_id
       }
-      
-      profile: var.profile
-      version: var.apic_version
-      storageClass: var.storage_class
-   }
+      profile = var.profile
+      version = var.apic_version
+      storageClass = var.storage_class
+    }
   }
   layer = "services"
   type  = "instances"

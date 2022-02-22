@@ -8,4 +8,16 @@ test/stages/bin2
 test/stages/terraform.tfstate
 test/stages/.tmp
 test/stages/.terraform
+terraform.tfstate
+terraform.tfstate.backup
+gitops
+module
+tmp
+.kubeconfig
+git_repo
+git_token
+.namespace
+.terraform.lock.hcl
+gitops-output.json
+terraform.tfvars 
 
