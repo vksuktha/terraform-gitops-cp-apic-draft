@@ -1,0 +1,11 @@
+.idea/
+*.iml
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
+test/stages/bin
+test/stages/bin2
+test/stages/terraform.tfstate
+test/stages/.tmp
+test/stages/.terraform
+

@@ -1,0 +1,11 @@
+#
+ibm_apic_instance:
+  name: apic-instance
+  license:
+    accept: true
+    license_id: L-RJON-C7BJ42
+    metric: VIRTUAL_PROCESSOR_CORE
+    use: nonproduction
+  profile: n1xc7.m48
+  version: 10.0.4.0-ifix1-54 
+  storageClassname: ibmc-block-gold
