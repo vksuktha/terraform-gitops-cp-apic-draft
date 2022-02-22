@@ -47,7 +47,16 @@ versions:
         moduleRef:
           id: gitops
           output: sealed_secrets_cert
-      - name: catalog
+      - name: apic_version
         moduleRef:
-          id: catalogs
-          output: catalog_ibmoperators
+          id: dep-manager
+          output: apic.version
+      - name: license_id
+        moduleRef:
+          id: dep-manager
+          output: apic.license
+      - name: usage
+        moduleRef:
+          id: dep-manager
+          output: apic.license_use
+        
