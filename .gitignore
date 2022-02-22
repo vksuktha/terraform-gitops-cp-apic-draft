@@ -19,5 +19,5 @@ git_token
 .namespace
 .terraform.lock.hcl
 gitops-output.json
-terraform.tfvars 
+terraform.tfvars
 
