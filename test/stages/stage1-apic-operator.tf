@@ -6,4 +6,5 @@ module "apic" {
   server_name = module.gitops.server_name
   catalog = module.cp_catalogs.catalog_ibmoperators
   channel = module.cp4i-dependencies.apic.channel
+  platform_navigator_name = module.cp_platform_navigator.name
 }
